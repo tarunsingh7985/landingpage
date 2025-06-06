@@ -1,0 +1,105 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-image: url(image/gym1.jpg);
+  background-size: cover;
+  background-repeat:no-repeat;
+  height: 100vh;
+  color: white;
+}
+
+.left {
+  position : absolute;
+  left: 54px;
+  top: 20px;
+  display: inline-block;
+}
+.left img {
+  width: 80px;
+  
+  border-radius: 50%; ;
+}
+.left div {
+  text-align: center;
+  font-size: 30px;
+}
+.mid {
+  display: block;
+  width: 44%;
+  margin: 20px auto;
+  
+}
+.right {
+  position: absolute;
+  right: 34px;
+  top: 30px;
+  display: inline-block;
+}
+.navbar {
+  display: inline-block;
+}
+.navbar li {
+  display: inline-block;
+  font-size: 20px;
+}
+.navbar li a {
+  
+  color: white;
+  text-decoration: none;
+  padding: 14px; 
+  position: relative;
+ 
+}
+.navbar li a::before{
+  content:'';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  border-bottom: 2px solid rgb(227, 223, 18);
+  transition: 0.4s linear;
+}
+.navbar li a:hover::before{
+  width: 90%;
+}
+.navbar li a:hover
+ {
+  width: 90%;
+  color: rgb(227, 223, 18);
+}
+.btn {
+  padding: 4px 14px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  font-size: 18px;
+}
+.btn:hover {
+  background-color: grey;
+}
+.h-text{
+    max-width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.h-text span{
+    font-size: 3.5em;
+    color: brown;
+}
+.h-text a{
+    text-decoration: none;
+    background-color: indianred;
+    color: white;
+    padding: 10px 20px;
+    letter-spacing: 5px;
+    border-radius: 8px;
+    font-size: 18px;
+}
+.h-text a:hover{
+    border: 4px solid brown ;
+    font-size: 20px;
+}
